@@ -4,34 +4,39 @@
     margin-left:365px; 
     margin-right: auto;
     background-color: #666; */
-    height:200px;
-    width: 375px; 
+    height:100px;
+    width: 200px; 
     position: absolute;
-    margin-right: 350px;
+    /* margin-right: 450px; */
     margin-left:365px; 
     left: 0;
     top: 0;
-    padding: 4px;
+   
 }
+
 
 .menu {
 	width: auto;
 	display: table;
-  margin-left:365px; 
+  margin-left:720px; 
+  width: 520px; 
 }
+
 .menu ul {
 	display: table-row;
+	
 }
 .menu li {
 	display: table-cell;
-	background: #2767A0;
+	
 }
-.menu ul li:hover, .menu a:hover {
+/* .menu ul li:hover, .menu a:hover {
 	background: #666;
-}
+} */
 .menu li a {
+  text-decoration: none;
 	display: block;
-	padding: 8px 15px;
-	color: #fff;
+	padding: 35px 15px;
+	color: rgb(0, 0, 0);
 	text-align: center;
 }
