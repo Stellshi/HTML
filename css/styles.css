@@ -57,7 +57,7 @@ h6 {
     font-size: 150px;
     font-weight: 700;
     text-transform: uppercase;
-    text-align: center;
+    /* text-align: center; */
     line-height: 1;
 }
 
@@ -67,13 +67,13 @@ h6 {
     width: 60px;
     height: 3px;
     background-color: white;
-    margin: 60px auto 0;
+    margin: 60px auto;
 }
 
 .inro__inner {
     width: 100%;
     max-width: 880px;
-    margin: 0 auto ;
+    margin: 0 auto;
     text-align: center;
     /*  выравнивание по центру #center */
 }
@@ -145,7 +145,7 @@ h6 {
     opacity: 1;
     /* display: block; */
     /* color: coral; */
-  
+
 }
 
 /* Кнопки */
@@ -163,4 +163,58 @@ h6 {
     text-decoration: none;
     margin: 0 auto;
     justify-content: center;
+
+    transition: background 0.2s linear, color 0.2s linear;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* Slider */
+.slider {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider_item {
+    width: 23%;
+    position: relative;
+    border-top: 3px solid white;
+opacity: 0.7;
+
+
+
+
+    padding: 20px 0;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.slider_item.active::before{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+position: absolute;
+top: -3px;
+left: 0;
+z-index: 1;
+background-color: #f38181;
+
+
+}
+.slider_item.active{
+    opacity: 1;
+
+}
+
+.slider_number {
+    font-size: 24px;
+    font-weight: 700;
+
 }
